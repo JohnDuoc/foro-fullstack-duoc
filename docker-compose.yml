@@ -1,0 +1,13 @@
+services:
+  ms-usuario:
+    build: ./ms-usuario
+    ports:
+      - "8081:8081"
+  ms-foro:
+    build: ./ms-foro
+    ports:
+      - "8082:8082"
+  frontend-foro:
+    build: ./frontend-foro
+    ports:
+      - "4200:80"
